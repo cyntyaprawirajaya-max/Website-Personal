@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fara Zulianingsih</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Scanline Overlay -->
+  <div class="scanline"></div>
+
+  <!-- Grid Background -->
+  <div class="grid-bg"></div>
+
+  <!-- Floating Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-line"></div>
+      <p class="system-text">[ Dinggo: Fara Zulianingsih ]</p>
+      <p class="system-text">[ Tekan: N ]</p>
+      <div class="header-line"></div>
+    </header>
+
+    <!-- Section 1: Sapaan -->
+    <section class="section" data-step="1" id="step1">
+      <div class="step-indicator">01</div>
+      <h2 class="glitch" data-text="gimana kabarmu?.">piye kabarmu?</h2>
+      <p class="subtitle">#Fighting Selalu :)</p>
+      <div class="message-box">
+        <p class="typewriter">semenjak wmu wes ora cedak utowo dm an ro aku maneh, aku nak kene kangen.</p>
+      </div>
+      <button class="next-btn" data-next="2">
+        <span>Selamat Membaca</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Section 2: Ungkapanku -->
+    <section class="section hidden" data-step="2" id="step2">
+      <div class="step-indicator">02</div>
+      <h2 class="glitch" data-text="Aku Kangen.">Aku Kangen.</h2>
+      <p class="subtitle">#Don't Give Up:)</p>
+      <div class="message-box neon-border">
+        <p>Saben aku keileng wmu, howone kangen <span class="highlight">tok</span> tapi sayange wmu duduk nggonku.</p>
+        <p>wmu baik <span class="highlight glitch-small">poll</span> aku rung iso dadi seng baik nggo wmu.</p>
+      </div>
+      <button class="next-btn" data-next="3">
+        <span>Lanjutno ya..</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Section 3: Alasanku -->
+    <section class="section hidden" data-step="3" id="step3">
+      <div class="step-indicator">03</div>
+      <h2 class="glitch" data-text="Howone pengen..">Howone pengen..</h2>
+      <p class="subtitle"> #Never Give Up :)</p>
+      <div class="reason-grid">
+        <div class="reason-card" data-delay="0">
+          <div class="card-icon">:)</div>
+          <h3>Senyummu</h3>
+          <p>Ngilingno aku nk wmu, nek wmu ra gampang arep tak ndueni.</p>
+        </div>
+        <div class="reason-card" data-delay="200">
+          <div class="card-icon">💠</div>
+          <h3>Matamu</h3>
+          <p>Ibarat Mengagumi.</p>
+        </div>
+        <div class="reason-card" data-delay="400">
+          <div class="card-icon">🌸</div>
+          <h3>Tekomu</h3>
+          <p>Marai aku seneng.</p>
+        </div>
+        <div class="reason-card" data-delay="600">
+          <div class="card-icon">🔮</div>
+          <h3>Jiwa-mu</h3>
+          <p>ws ono seng ndueni.</p>
+        </div>
+      </div>
+      <button class="next-btn" data-next="4">
+        <span>Lanjutno ya..</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Section 4: Harapanku -->
+    <section class="section hidden" data-step="4" id="step4">
+      <div class="step-indicator">04</div>
+      <h2 class="glitch" data-text="Harapanku dinggo wmu.">Harapanku dinggo wmu.</h2>
+      <p class="subtitle"> #Believe in yourself :)</p>
+      <div class="message-box">
+        <ul class="hope-list">
+          <li>✦ Bahagia selalu.</li>
+          <li>✦ Sehat selalu.</li>
+          <li>✦ Semangat selalu.</li>
+          <li>✦ Sukses selalu.</li>
+        </ul>
+      </div>
+      <button class="next-btn" data-next="5">
+        <span>Lanjutno ya..</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Section 5: Bagian Terakhir og, wes mantun -->
+    <section class="section hidden" data-step="5" id="step5">
+      <div class="step-indicator">05</div>
+      <h2 class="glitch" data-text="Aku pengen wmu.">Aku pengen wmu.</h2>
+      <p class="subtitle"> Come back soon fara:)</p>
+      <div class="message-box final-box">
+        <p class="final-text">Suwun wes gelem kenalan ro <span class="highlight">aku</span> masio kui sedilok.</p>
+        <p class="final-text">Aku berharap nk wmu — dino iki, sesok, lan saben wektu <span class="highlight">aku ki</span> iseh ngarepno wmu tok.</p>
+        <div class="signature">
+          <p>— bahagia selalu yaa, aku nyuwun waktumu sedilok tok og, wes mantun, maap waktumu dibuak-buak mung mergo iki tok yaa. ngapunten seng akeh marang aku nang kamu </p>
+          <p class="sign-name">[ F A R A ]</p>
+        </div>
+      </div>
+      <button class="restart-btn" id="restartBtn">
+        <span>↻ ojo dipetek nek ra pengen mbaleni moco yaa.. </span>
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>// fara zulianingsih // 26.07.2026 //</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
